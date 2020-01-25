@@ -1,0 +1,226 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Cheatsheet
+% LaTeX Template
+% Version 1.0 (12/12/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Michael Müller (https://github.com/cmichi/latex-template-collection) with
+% extensive modifications by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{scrartcl} % 11pt font size
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+
+\usepackage[margin=0pt, landscape]{geometry} % Page margins and orientation
+
+\usepackage{graphicx} % Required for including images
+
+\usepackage{color} % Required for color customization
+\definecolor{mygray}{gray}{.75} % Custom color
+
+\usepackage{url} % Required for the \url command to easily display URLs
+
+\usepackage[ % This block contains information used to annotate the PDF
+colorlinks=false, 
+pdftitle={p5 heatsheet}, 
+pdfauthor={Kristian Wichmann}, 
+pdfsubject={Compilation of functions and links}, 
+pdfkeywords={p5, p5js, Cheatsheet}
+]{hyperref}
+
+\setlength{\unitlength}{1mm} % Set the length that numerical units are measured in
+\setlength{\parindent}{0pt} % Stop paragraph indentation
+
+\renewcommand{\dots}{\ \dotfill{}\ } % Fills in the right amount of dots
+
+\newcommand{\command}[2]{#1~\dotfill{}~#2\\} % Custom command for adding a shorcut
+
+\newcommand{\sectiontitle}[1]{\paragraph{#1} \ \\} % Custom command for subsection titles
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{picture}(297,210) % Create a container for the page content
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION 
+%----------------------------------------------------------------------------------------
+
+\put(10,200){ % Position on the page to put the title
+\begin{minipage}[t]{210mm} % The size and alignment of the title
+\section*{International Processing Day 2020 - p5 workshop - cheatsheet - } % Title
+\end{minipage}
+}
+
+%----------------------------------------------------------------------------------------
+%	FIRST COLUMN SPECIFICATION
+%----------------------------------------------------------------------------------------
+
+\put(10,180){ % Divide the page
+\begin{minipage}[t]{85mm} % Create a box to house text
+
+%----------------------------------------------------------------------------------------
+%	HEADING ONE
+%----------------------------------------------------------------------------------------
+
+\sectiontitle{Window manager control}
+			
+Client = Application window.\\
+
+\command{Mod4 + Ctrl + r}{Restart awesome}
+\command{Mod4 + Return}{Start terminal in current tag}
+\command{Mod4 + F1}{Run terminal prompt}
+\command{Mod4 + F4}{Run Lua code prompt}
+
+%----------------------------------------------------------------------------------------
+%	HEADING TWO
+%----------------------------------------------------------------------------------------				
+			
+\sectiontitle{Clients}
+			
+\command{Mod4 + Shift + r}{Redraw the focused window}
+\command{Mod4 + m}{Maximize client}
+\command{Mod4 + f}{Set client fullscreen}
+\command{Mod4 + Shift + c}{Kill focused client}
+
+\command{Mod4 + 1}{Go to Tag 1}
+\command{Mod4 + Ctrl + 1-9}{Toggle tag view}
+\command{Mod4 + t}{Toggle tag view}
+\command{Mod4 + Shift + 1-9}{Tag marked clients with tag}
+\command{Mod4 + Shift + Ctrl + 1-9}{Toggle tag on client}
+
+%----------------------------------------------------------------------------------------
+%	HEADING THREE
+%----------------------------------------------------------------------------------------	
+
+\sectiontitle{Mouse}
+
+B1, B2, B3 = Mouse buttons 1--3.\\
+
+\command{Mod4 + B1 on tag}{Tag client with this tag}
+\command{Mod4 + B1 on client}{Move window}
+\command{Mod4 + B3 on tag}{Toggle this tag for client}
+\command{Mod4 + B3 on client}{Resize window}
+\command{B3 clicked on tag}{Add tag to current view}
+
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % End the first column of text
+} % End the first division of the page
+
+%----------------------------------------------------------------------------------------
+%	SECOND COLUMN SPECIFICATION 
+%----------------------------------------------------------------------------------------
+
+\put(105,180){ % Divide the page
+\begin{minipage}[t]{85mm} % Create a box to house text
+
+%----------------------------------------------------------------------------------------
+%	HEADING FOUR
+%----------------------------------------------------------------------------------------
+
+\sectiontitle{Navigation}
+
+\command{Mod4 + j}{Focus next client}
+\command{Mod4 + k}{Focus previous client}
+\command{Mod4 + u}{Focus first urgent client}
+\command{Mod4 + Left}{View previous tag}
+\command{Mod4 + Right}{View next tag}
+\command{Mod4 + 1-9}{Switch to tag 1-9}
+\command{Mod4 + Ctrl + j}{Focus next screen}
+\command{Mod4 + Ctrl + k}{Focus previous screen}
+\command{Mod4 + j}{Focus next client}
+\command{Mod4 + k}{Focus previous client}
+\command{Mod4 + u}{Focus first urgent client}
+\command{Mod4 + Esc}{Focus previously selected tag set}
+					
+%----------------------------------------------------------------------------------------
+%	HEADING FIVE
+%----------------------------------------------------------------------------------------				
+					
+\sectiontitle{Layout modification} % Heading five
+
+\command{Mod4 + Shift + k / j}{Rotate clients around}
+\command{Mod4 + h / l}{Change master width by 5\%}
+\command{Mod4 + Shift + h}{Number of master windows +1}
+\command{Mod4 + Shift + l}{Number of master windows --1}
+\command{Mod4 + Ctrl + h}{Number of columns for non-master windows +1}
+\command{Mod4 + Ctrl + l}{Number of columns for non-master windows --1}
+
+\command{Mod4 + Space}{Next layout}
+\command{Mod4 + Shift + Space}{Previous layout}
+\command{Mod4 + Ctrl + Space}{Floating master}
+\command{Mod4 + Ctrl + Return}{Swap focused client with master}
+
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % End the second column of text
+} % End the second division of the page
+
+%----------------------------------------------------------------------------------------
+%	THIRD COLUMN SPECIFICATION 
+%----------------------------------------------------------------------------------------
+
+\put(200,180){ % Divide the page
+\begin{minipage}[t]{85mm} % Create a box to house tex
+
+%----------------------------------------------------------------------------------------
+%	IMPORTANT FILES
+%----------------------------------------------------------------------------------------
+
+\sectiontitle{Important files}
+
+\texttt{/.config/awesome/rc.lua}
+
+\texttt{/etc/xdg/awesome/rc.lua}
+
+\vspace{\baselineskip} % Whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+%	LINKS AND INFORMATION
+%----------------------------------------------------------------------------------------
+
+\sectiontitle{Links and information}
+
+\url{http://awesome.naquadah.org/}
+
+\url{http://awesome.naquadah.org/wiki/}
+
+%----------------------------------------------------------------------------------------
+%	FOOTNOTE
+%----------------------------------------------------------------------------------------
+
+\vspace{\baselineskip}
+\linethickness{0.5mm} % Thickness of the footer line
+{\color{mygray}\line(1,0){30}} % Print the line with a custom color
+
+\footnotesize{
+Created by John Smith, 2015\\ 
+\url{http://johnsmith.com/}\\
+				
+Released under the MIT license.
+}
+
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % End the third column of text
+} % End the third division of the page
+\end{picture} % End the container for the entire page
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
