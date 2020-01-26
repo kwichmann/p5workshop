@@ -1,5 +1,5 @@
 # p5workshop
-For International Processing Day 2020
+For Processing Community Day Copenhagen 2020
 
 ## Useful links
 - The p5 online editor: [editor.p5js.org](https://editor.p5js.org/)
