@@ -9,3 +9,6 @@ For Processing Community Day Copenhagen 2020
 - [The Coding Train](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw)
 - [Kreativ Kodning](https://www.youtube.com/channel/UCRSqTiVe7Rho95hNtd3hJBQ) (in Danish)
 
+# The online editor and basic graphics
+
+[A collection of inspiring works of art](https://docs.google.com/presentation/d/e/2PACX-1vTOWjpHnjLNllezpdzjXKan4EI-zMAwuV4N_PcARcsQja_aY5P1p5fRPr2v82uxmYgFGSlULZ5jtFWd/embed?start=false&loop=false&delayms=3000&slide=id.g3f70b3232d_0_27) - *Compiled by Esther Hersh*
