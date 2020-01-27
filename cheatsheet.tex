@@ -62,7 +62,7 @@ pdfkeywords={p5, p5js, Cheatsheet}
 
 \put(10,200){ % Position on the page to put the title
 \begin{minipage}[t]{210mm} % The size and alignment of the title
-\section*{International Processing Day 2020 - p5 workshop - cheatsheet - } % Title
+\section*{Processing Community Day Copenhagen 2020 - p5 workshop - cheatsheet} % Title
 \end{minipage}
 }
 
@@ -74,48 +74,53 @@ pdfkeywords={p5, p5js, Cheatsheet}
 \begin{minipage}[t]{85mm} % Create a box to house text
 
 %----------------------------------------------------------------------------------------
-%	HEADING ONE
+%	GITHUB LINK
 %----------------------------------------------------------------------------------------
 
-\sectiontitle{Window manager control}
+\sectiontitle{Workshop github page}
 			
-Client = Application window.\\
-
-\command{Mod4 + Ctrl + r}{Restart awesome}
-\command{Mod4 + Return}{Start terminal in current tag}
-\command{Mod4 + F1}{Run terminal prompt}
-\command{Mod4 + F4}{Run Lua code prompt}
+\url{github.com/kwichmann/p5workshop}\\
 
 %----------------------------------------------------------------------------------------
-%	HEADING TWO
+%	BASIC GRAPHICS
 %----------------------------------------------------------------------------------------				
 			
-\sectiontitle{Clients}
-			
-\command{Mod4 + Shift + r}{Redraw the focused window}
-\command{Mod4 + m}{Maximize client}
-\command{Mod4 + f}{Set client fullscreen}
-\command{Mod4 + Shift + c}{Kill focused client}
+\sectiontitle{Basic graphics}
 
-\command{Mod4 + 1}{Go to Tag 1}
-\command{Mod4 + Ctrl + 1-9}{Toggle tag view}
-\command{Mod4 + t}{Toggle tag view}
-\command{Mod4 + Shift + 1-9}{Tag marked clients with tag}
-\command{Mod4 + Shift + Ctrl + 1-9}{Toggle tag on client}
+\textbf{Canvas} \\
+\command{\texttt{createCanvas(width, height)}}{Create}
+\command{\texttt{background(r, g, b)}}{Background color}
+
+\textbf{Points and lines}\\
+\command{\texttt{point(x, y)}}{Point at $(x,y)$}
+\command{\texttt{line(x1, y1, x2, y2)}}{From $(x_1,y_1)$ to $(x_2,y_2)$}
+
+\textbf{Style of points, lines, and outlines}\\
+\command{\texttt{strokeWeight(size)}}{Size/width}
+\command{\texttt{stroke(r, g, b)}}{Color}
+\command{\texttt{noStroke()}}{Disable}
+
+\textbf{Geometric shapes}\\
+\command{\texttt{rect(x, y, width, height)}}{Rectangle at $(x,y)$}
+\command{\texttt{ellipse(x, y, radius)}}{Circle with center$(x,y)$}
+\command{\texttt{ellipse(x, y, width, height)}}{Ellipse}
+\command{\texttt{triangle(x1, y1, x2, y2, x3, y3)}}{Triangle}
+
+\textbf{Style of fill}\\
+\command{\texttt{fill(r, g, b)}}{Color}
+\command{\texttt{noFill()}}{Disable}
 
 %----------------------------------------------------------------------------------------
-%	HEADING THREE
+%	COLOR
 %----------------------------------------------------------------------------------------	
+\sectiontitle{Color arguments}
 
-\sectiontitle{Mouse}
+\command{$\cdots$\texttt{(r, g, b)}}{Red, green, and blue, 0-255}
+\command{$\cdots$\texttt{(brightness)}}{Grayscale: 0 black, 255 white}
 
-B1, B2, B3 = Mouse buttons 1--3.\\
-
-\command{Mod4 + B1 on tag}{Tag client with this tag}
-\command{Mod4 + B1 on client}{Move window}
-\command{Mod4 + B3 on tag}{Toggle this tag for client}
-\command{Mod4 + B3 on client}{Resize window}
-\command{B3 clicked on tag}{Add tag to current view}
+\textbf{Alpha:} 0 fully transparent, 255 fully opaque
+\command{$\cdots$\texttt{(r, g, b, a)}}{Red, green, blue with alpha}
+\command{$\cdots$\texttt{(brightness, a)}}{Grayscale with alpha}
 
 %----------------------------------------------------------------------------------------
 
@@ -130,41 +135,62 @@ B1, B2, B3 = Mouse buttons 1--3.\\
 \begin{minipage}[t]{85mm} % Create a box to house text
 
 %----------------------------------------------------------------------------------------
+%	BUILT-IN VARIABLES
+%----------------------------------------------------------------------------------------
+
+\sectiontitle{Built-in variables}
+
+\command{\texttt{width} and \texttt{height}}{Canvas size}
+\command{\texttt{mouseX} and \texttt{mouseY}}{Current mouse position}
+\command{\texttt{pmouseX} and \texttt{pmouseY}}{Previous mouse position}
+\command{\texttt{key}}{Last key pressed}
+
+%----------------------------------------------------------------------------------------
+%	EVENTS
+%----------------------------------------------------------------------------------------
+
+\sectiontitle{Events}
+
+\command{\texttt{function mousePressed() \{...\}}}{Mouse click}
+\command{\texttt{function keyPressed() \{...\}}}{Key pressed}
+					
+%----------------------------------------------------------------------------------------
+%	VARIABLES
+%----------------------------------------------------------------------------------------				
+					
+\sectiontitle{Variables and constants}
+
+\command{\texttt{let a}}{Declare variable $a$}
+\command{\texttt{let b = 5}}{Declare and assign variable $b$}
+\command{\texttt{const c = 42}}{Assign constant $c$}
+\command{\texttt{d = 3 * a + d}}{Reassign value to variable $d$}
+\command{\texttt{n += 3}}{Add 3 to variable $n$}
+\command{\texttt{m -= 5}}{Subtract 4 from variable $m$}
+\command{\texttt{x *= 2}}{Multiply variable $x$ by 2}
+\command{\texttt{y /= 7}}{Divide variable $y$ by 7}
+\command{\texttt{i++}}{Add 1 to variable $i$}
+\command{\texttt{j++}}{Subtract 1 from variable $j$}
+
+%----------------------------------------------------------------------------------------
 %	HEADING FOUR
 %----------------------------------------------------------------------------------------
 
-\sectiontitle{Navigation}
+\sectiontitle{The console}
 
-\command{Mod4 + j}{Focus next client}
-\command{Mod4 + k}{Focus previous client}
-\command{Mod4 + u}{Focus first urgent client}
-\command{Mod4 + Left}{View previous tag}
-\command{Mod4 + Right}{View next tag}
-\command{Mod4 + 1-9}{Switch to tag 1-9}
-\command{Mod4 + Ctrl + j}{Focus next screen}
-\command{Mod4 + Ctrl + k}{Focus previous screen}
-\command{Mod4 + j}{Focus next client}
-\command{Mod4 + k}{Focus previous client}
-\command{Mod4 + u}{Focus first urgent client}
-\command{Mod4 + Esc}{Focus previously selected tag set}
-					
+\command{\texttt{console.log(x)}}{Write the value of $x$ in console}
+
+
 %----------------------------------------------------------------------------------------
-%	HEADING FIVE
+%	CONDITIONALS
 %----------------------------------------------------------------------------------------				
-					
-\sectiontitle{Layout modification} % Heading five
+\sectiontitle{Conditionals}
 
-\command{Mod4 + Shift + k / j}{Rotate clients around}
-\command{Mod4 + h / l}{Change master width by 5\%}
-\command{Mod4 + Shift + h}{Number of master windows +1}
-\command{Mod4 + Shift + l}{Number of master windows --1}
-\command{Mod4 + Ctrl + h}{Number of columns for non-master windows +1}
-\command{Mod4 + Ctrl + l}{Number of columns for non-master windows --1}
+\command{\texttt{if (a == 4) \{...\}}}{Do if $a$ is exactly 4}
+\command{\texttt{if (b < 60) \{...\}}}{Do if $b$ is less than 60}
+\command{\texttt{if (c > -3) \{...\}}}{Do if $c$ is more than -3}
 
-\command{Mod4 + Space}{Next layout}
-\command{Mod4 + Shift + Space}{Previous layout}
-\command{Mod4 + Ctrl + Space}{Floating master}
-\command{Mod4 + Ctrl + Return}{Swap focused client with master}
+\textbf{Else:} Do something else when not true\\
+\texttt{if (cond) \{...\} else \{...\}}\\
 
 %----------------------------------------------------------------------------------------
 
@@ -179,26 +205,34 @@ B1, B2, B3 = Mouse buttons 1--3.\\
 \begin{minipage}[t]{85mm} % Create a box to house tex
 
 %----------------------------------------------------------------------------------------
-%	IMPORTANT FILES
+%	IMAGES
 %----------------------------------------------------------------------------------------
 
-\sectiontitle{Important files}
+\sectiontitle{Images}
 
-\texttt{/.config/awesome/rc.lua}
+\command{\texttt{img = loadImage(path)}}{Assign to variable}
+\command{\texttt{image(img, x, y)}}{Show image at $(x,y)$}
+\command{\texttt{image(img, x, y, height, width)}}{Set size}
+\command{\texttt{tint(r, g, b)}}{Color images}
+\command{\texttt{noTint()}}{Undo image coloring}
+\command{\texttt{imageMode(MODE)}}{Change display mode}
+\command{\texttt{filter(FILTER)}}{Use image filter}
 
-\texttt{/etc/xdg/awesome/rc.lua}
-
-\vspace{\baselineskip} % Whitespace before the next section
+\textbf{Webcam}\\
+\command{\texttt{webcam = createCapture(VIDEO)}}{Show cam}
+\command{\texttt{webcam.hide())}}{Hide cam}
 
 %----------------------------------------------------------------------------------------
-%	LINKS AND INFORMATION
+%	SOUND
 %----------------------------------------------------------------------------------------
 
-\sectiontitle{Links and information}
+\sectiontitle{Sound}
 
-\url{http://awesome.naquadah.org/}
+\command{\texttt{mp3 = loadSound(path)}}{Assign to variable}
+\command{\texttt{mp3.play()}}{Play}
+\command{\texttt{mp3.stop()}}{Stop}
+\command{\texttt{mp3.rate(r)}}{Set playback rate}
 
-\url{http://awesome.naquadah.org/wiki/}
 
 %----------------------------------------------------------------------------------------
 %	FOOTNOTE
@@ -209,8 +243,9 @@ B1, B2, B3 = Mouse buttons 1--3.\\
 {\color{mygray}\line(1,0){30}} % Print the line with a custom color
 
 \footnotesize{
-Created by John Smith, 2015\\ 
-\url{http://johnsmith.com/}\\
+Created by Kristian Gårdhus Wichmann, 2020\\
+
+Based on \url{www.latextemplates.com/template/cheatsheet}\\
 				
 Released under the MIT license.
 }
