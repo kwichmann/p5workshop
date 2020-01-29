@@ -135,6 +135,14 @@ pdfkeywords={p5, p5js, Cheatsheet}
 \begin{minipage}[t]{85mm} % Create a box to house text
 
 %----------------------------------------------------------------------------------------
+%	COMMENTS
+%----------------------------------------------------------------------------------------
+
+\sectiontitle{Comments}
+
+\command{\texttt{// Comment}}{Note to self. Is not executed}
+
+%----------------------------------------------------------------------------------------
 %	BUILT-IN VARIABLES
 %----------------------------------------------------------------------------------------
 
@@ -152,7 +160,8 @@ pdfkeywords={p5, p5js, Cheatsheet}
 \sectiontitle{Events}
 
 \command{\texttt{function mousePressed() \{...\}}}{Mouse click}
-\command{\texttt{function keyPressed() \{...\}}}{Key pressed}
+\command{\texttt{function keyPressed() \{...\}}}{Keyboard input}
+\command{\texttt{function preload() \{...\}}}{Done before setup}
 					
 %----------------------------------------------------------------------------------------
 %	VARIABLES
@@ -172,25 +181,13 @@ pdfkeywords={p5, p5js, Cheatsheet}
 \command{\texttt{j++}}{Subtract 1 from variable $j$}
 
 %----------------------------------------------------------------------------------------
-%	HEADING FOUR
+%	CONSOLE
 %----------------------------------------------------------------------------------------
 
 \sectiontitle{The console}
 
 \command{\texttt{console.log(x)}}{Write the value of $x$ in console}
 
-
-%----------------------------------------------------------------------------------------
-%	CONDITIONALS
-%----------------------------------------------------------------------------------------				
-\sectiontitle{Conditionals}
-
-\command{\texttt{if (a == 4) \{...\}}}{Do if $a$ is exactly 4}
-\command{\texttt{if (b < 60) \{...\}}}{Do if $b$ is less than 60}
-\command{\texttt{if (c > -3) \{...\}}}{Do if $c$ is more than -3}
-
-\textbf{Else:} Do something else when not true\\
-\texttt{if (condition) \{...\} else \{...\}}\\
 
 %----------------------------------------------------------------------------------------
 
@@ -203,6 +200,18 @@ pdfkeywords={p5, p5js, Cheatsheet}
 
 \put(200,180){ % Divide the page
 \begin{minipage}[t]{85mm} % Create a box to house tex
+
+%----------------------------------------------------------------------------------------
+%	CONDITIONALS
+%----------------------------------------------------------------------------------------				
+\sectiontitle{Conditionals}
+
+\command{\texttt{if (a == 4) \{...\}}}{Do if $a$ is exactly 4}
+\command{\texttt{if (b < 60) \{...\}}}{Do if $b$ is less than 60}
+\command{\texttt{if (c > -3) \{...\}}}{Do if $c$ is more than -3}
+
+\textbf{Else:} Do something else when not true\\
+\texttt{if (condition) \{...\} else \{...\}}\\
 
 %----------------------------------------------------------------------------------------
 %	IMAGES
@@ -220,7 +229,7 @@ pdfkeywords={p5, p5js, Cheatsheet}
 
 \textbf{Webcam}\\
 \command{\texttt{webcam = createCapture(VIDEO)}}{Show cam}
-\command{\texttt{webcam.hide())}}{Hide cam}
+\command{\texttt{webcam.hide()}}{Hide cam}
 
 %----------------------------------------------------------------------------------------
 %	SOUND
@@ -231,7 +240,8 @@ pdfkeywords={p5, p5js, Cheatsheet}
 \command{\texttt{mp3 = loadSound(path)}}{Assign to variable}
 \command{\texttt{mp3.play()}}{Play}
 \command{\texttt{mp3.stop()}}{Stop}
-\command{\texttt{mp3.rate(r)}}{Set playback rate}
+\command{\texttt{mp3.setVolume(v)}}{$v$ ranges from 0 to 1}
+\command{\texttt{mp3.pan(p)}}{$p$ ranges from -1 to 1. 0 is center.}
 
 
 %----------------------------------------------------------------------------------------
