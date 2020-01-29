@@ -11,8 +11,8 @@ For Processing Community Day Copenhagen 2020
 - p5 reference: [p5js.org/reference](https://p5js.org/reference/)
 
 ### Youtube channels
-- [The Coding Train](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw)
-- [Kreativ Kodning](https://www.youtube.com/channel/UCRSqTiVe7Rho95hNtd3hJBQ) (in Danish)
+- [The Coding Train](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA)
+- [Kreativ Kodning](https://www.youtube.com/channel/UCRSqTiVe7Rho95hNtd3hJBQ/playlists) (in Danish)
 
 # 1. Create your own masterpiece
 <img src="https://ctl.s6img.com/society6/img/_iGYmenyD9ZbVzWAyJgD4yoDm2o/w_700/prints/~artwork/s6-original-art-uploads/society6/uploads/misc/ae0e77aad5074016ac4a2f01fe59c47d" alt="Kandinsky"
@@ -38,9 +38,8 @@ This [Color picker](https://www.google.com/search?q=color+picker) might be helpf
 - Make a rectangle that frames the group of dots. Make sure it has no fill.
 
 
-
 ## Finally, create your own piece of abstract art
-Use what you've learned to compose a work of your own. Use the examples above, either as inspiration, or choose one to recreate:
+Use what you've learned to compose a work of your own. Use the examples below, either as inspiration, or choose one to recreate:
 
 [A collection of inspiring works of art](https://docs.google.com/presentation/d/e/2PACX-1vTOWjpHnjLNllezpdzjXKan4EI-zMAwuV4N_PcARcsQja_aY5P1p5fRPr2v82uxmYgFGSlULZ5jtFWd/embed?start=false&loop=false&delayms=3000&slide=id.g3f70b3232d_0_27) - *Compiled by Esther Hersh*
 
@@ -65,3 +64,5 @@ Use what you've learned to compose a work of your own. Use the examples above, e
 # 3. Animation using variables
 
 # 4. Images and sound
+
+**Once again, links to your cool sketches are welcome at p5workshop2020@gmail.com**
