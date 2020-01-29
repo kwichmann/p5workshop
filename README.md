@@ -53,16 +53,55 @@ Use what you've learned to compose a work of your own. Use the examples below, e
 - Use the built-in width and height variables to draw a circle centered at the middle of the canvas.
 - Changes the size of the canvas in the createCanvas command, and check that the circle is now drawn at the new center.
 
-### 2.2 Using the mouse to draw
+### 2.2 Clicking the mouse
+- Move the background command from draw to setup, so that the draw function is empty (If in doubt, consult picture to the right) Consider what differences this will make.
+- Add a mousePressed function to the sketch.
+- In the mousePressed function, draw a dot at a random position on the screen. See the cheat sheet for how to generate random numbers for the coordinates.
+- Try clicking the mouse :D
+
+### 2.3 Using the mouse to draw
 - This might work better in a fresh sketch, so feel free to save your work and start a new one.
 - Draw a dot at the current mouse position.
-- What happens if, instead of calling the background command in draw, you call it setup (i.e. only once)? If in doubt, consult picture to the right.
+- What happens if, instead of calling the background command in draw, you call it setup (i.e. only once)? 
 - What happens if you give the stroke color some alpha? (If in doubt, see cheat sheet)
 - Remove the alpha from the stroke color. Put the background command back into draw. Give the background color some alpha instead. What happens?
 - Change the sketch, so that instead of a dot, a line from the previous mouse position to the current one is drawn.
 
 # 3. Animation using variables
 
-# 4. Images and sound
+# 4. Images
+[Start with this sketch](https://editor.p5js.org/kwichmann/sketches/q_v3Mu06)
+
+## Exercises
+
+### 4.1 Displaying images
+- Open the file tab (arrow next to sketch), and inspect the names of the picture files.
+- Choose one of the files names, and write it in the quotes of the loadImage command.
+- Display the image on the canvas - you choose where.
+- Change the size of the picture.
+- Change the color of the picture by tinting it.
+- Search the p5 reference for the filter command, and try applying a filter to the image.
+
+### 4.2 Make your own
+- Find an image online and upload it to your sketch. Transparent png files works best.
+- Display the image on the canvas.
+- Make the way the image display mode interactive, whether trough mouse or keyboard input.
+
+# 5. Sound
+[Start with this sketch](https://editor.p5js.org/kwichmann/sketches/0fBDR4iE)
+
+The song "Circle" by the band [Fail to Die](https://www.facebook.com/fail2die/) (whom, I may add, have a particularly charming guitar player) is already added to the sketch and loaded into a variable.
+
+## Exercises
+
+### 5.1 Playing sounds
+- Start playing the song by adding a command to the setup function.
+- Set a playback rate for the song. What happens if it's greater than one? Smaller than one? Negative?
+- Make the playback volume and/or the sound panning depend on the position of the mouse.
+
+### 5.2 Add your own
+- Find a sound file and upload it to one of your sketches.
+- Add sound to the sketch.
+- Add an interactive element to the playback.
 
 **Once again, links to your cool sketches are welcome at p5workshop2020@gmail.com**
