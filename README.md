@@ -14,6 +14,12 @@ For Processing Community Day Copenhagen 2020
 - [The Coding Train](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA)
 - [Kreativ Kodning](https://www.youtube.com/channel/UCRSqTiVe7Rho95hNtd3hJBQ/playlists) (in Danish)
 
+## Troubleshooting - What to do if you're stuck?
+1. Discuss with your coding partner.
+2. Consult [the cheat sheet](cheatsheet.pdf).
+3. Look up the examples and documentation at [p5 reference](https://p5js.org/reference/)
+4. Search for videos (the two channels above are good places to look).
+
 # 1. Create your own masterpiece
 <img src="https://ctl.s6img.com/society6/img/_iGYmenyD9ZbVzWAyJgD4yoDm2o/w_700/prints/~artwork/s6-original-art-uploads/society6/uploads/misc/ae0e77aad5074016ac4a2f01fe59c47d" alt="Kandinsky"
 	title="Wassily Kandinsky: 'Blue Painting'" align="right" width="250" height="250" />
@@ -139,7 +145,7 @@ Use what you've learned to compose a work of your own. Use the examples below, e
 	title="Are you ready to rock?"
 	align="right" width="250" height="250" />
 
-[Start with this sketch](https://editor.p5js.org/kwichmann/sketches/0fBDR4iE)
+[Start with this sketch](https://editor.p5js.org/kwichmann/sketches/0fBDR4iE) - Do note, that the functionality is from the [p5.sound library](https://p5js.org/reference/#/libraries/p5.sound)
 
 The song "Circle" by the band [Fail to Die](https://www.facebook.com/fail2die/) (whom, I may add, have a particularly charming guitar player) is already added to the sketch and loaded into a variable.
 
