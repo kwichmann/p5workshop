@@ -37,21 +37,21 @@ This [Color picker](https://www.google.com/search?q=color+picker) might be helpf
 
 ### 1.2 Points, stroke, and stroke weight
 - Put a large, green dot at the upper right part of the canvas.
-- Create a small group of dots of different sizes and colors at a region of the canvas of your choice. They should have coordinate sets close to each other, but not identical.
+- Create a small group of dots (3-4 is fine) of different sizes and colors at a region of the canvas of your choice. They should have coordinate sets close to each other, but not identical.
 
 ### 1.3 Lines
-- Draw an 'X' on the lower left of the canvas by drawing two lines crossing each other. The color is up to you.
+- Draw an 'X' on the lower left of the canvas by drawing two lines crossing each other. The colors and line widths are up to you.
 
 ### 1.4 Rectangles
-- Make a rectangle with stroke and fill colors of your choice so that it does no overlap the group of dot from last exercise.
+- Make a rectangle with stroke and fill colors of your choice so that it does no overlap the group of dots from exercise 1.2.
 - Make a rectangle that frames the group of dots. Make sure it has no fill.
 
 ### 1.5 Circles and ellipses
 - Draw a circle with red outline and orange fill.
 - Draw an ellipse with a height that is twice its width.
-- Draw an ellipse such that it encases the rectangle from the previous exercise. Make sure it has no fill.
+- Draw an ellipse such that it encases the rectangle from the exercise 1.4. Make sure it has no fill.
 
-### 1.6 Doing your own research
+### ![](https://p7.hiclipart.com/preview/207/306/492/serrano-pepper-cayenne-pepper-tabasco-pepper-chili-pepper-emoji-emoji.jpg =50px) 1.6 Doing your own research
 - Find the triangle command on the cheat sheet. How do you think it works?
 - Draw some triangles using the command. Both with and without fill.
 - Imagine you have a burning desire to add a drawing of pac-man to your sketch!
@@ -59,7 +59,7 @@ This [Color picker](https://www.google.com/search?q=color+picker) might be helpf
 - Check the examples and read the documentation. Use the information to draw a big yellow pac-man on the canvas :D
 
 ## Finally, create your own piece of abstract art
-Use what you've learned to compose a work of your own. Use the examples below, either as inspiration, or choose one to recreate:
+Use what you've learned to compose a work of your own. Use the examples below, either as inspiration, or choose one to recreate. You may want to start a new sketch for this, or you can continue 
 
 [A collection of inspiring works of art](https://docs.google.com/presentation/d/e/2PACX-1vTOWjpHnjLNllezpdzjXKan4EI-zMAwuV4N_PcARcsQja_aY5P1p5fRPr2v82uxmYgFGSlULZ5jtFWd/embed?start=false&loop=false&delayms=3000&slide=id.g3f70b3232d_0_27) - *Compiled by Esther Hersh*
 
