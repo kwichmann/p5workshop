@@ -39,16 +39,19 @@ This [Color picker](https://www.google.com/search?q=color+picker) might be helpf
 - Put a large, green dot at the upper right part of the canvas.
 - Create a small group of dots of different sizes and colors at a region of the canvas of your choice. They should have coordinate sets close to each other, but not identical.
 
-### 1.3 Rectangles
+### 1.3 Lines
+- Draw an 'X' on the lower left of the canvas by drawing two lines crossing each other. The color is up to you.
+
+### 1.4 Rectangles
 - Make a rectangle with stroke and fill colors of your choice so that it does no overlap the group of dot from last exercise.
 - Make a rectangle that frames the group of dots. Make sure it has no fill.
 
-### 1.4 Circles and ellipses
+### 1.5 Circles and ellipses
 - Draw a circle with red outline and orange fill.
 - Draw an ellipse with a height that is twice its width.
 - Draw an ellipse such that it encases the rectangle from the previous exercise. Make sure it has no fill.
 
-### 1.5 Doing your own research
+### 1.6 Doing your own research
 - Find the triangle command on the cheat sheet. How do you think it works?
 - Draw some triangles using the command. Both with and without fill.
 - Imagine you have a burning desire to add a drawing of pac-man to your sketch!
