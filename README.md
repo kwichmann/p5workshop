@@ -51,7 +51,10 @@ This [Color picker](https://www.google.com/search?q=color+picker) might be helpf
 - Draw an ellipse with a height that is twice its width.
 - Draw an ellipse such that it encases the rectangle from the exercise 1.4. Make sure it has no fill.
 
-### ![](https://p7.hiclipart.com/preview/207/306/492/serrano-pepper-cayenne-pepper-tabasco-pepper-chili-pepper-emoji-emoji.jpg =50px) 1.6 Doing your own research
+### 1.6 Transparency (alpha)
+- Try adding an extra parameter (alpha) to some of the 'stroke' and 'fill' commands in your sketch. Alpha should be between 0 and 255.
+
+### 1.7 *Optional* - Doing your own research
 - Find the triangle command on the cheat sheet. How do you think it works?
 - Draw some triangles using the command. Both with and without fill.
 - Imagine you have a burning desire to add a drawing of pac-man to your sketch!
@@ -116,7 +119,7 @@ Use what you've learned to compose a work of your own. Use the examples below, e
 - Watch as the circle eerily homes in on the cursor.
 
 # 4. Images
-[Start with this sketch](https://editor.p5js.org/kwichmann/sketches/q_v3Mu06)
+[Start by cloning this sketch](https://editor.p5js.org/kwichmann/sketches/q_v3Mu06)
 
 ## Exercises
 
@@ -148,7 +151,7 @@ Use what you've learned to compose a work of your own. Use the examples below, e
 	title="Are you ready to rock?"
 	align="right" width="250" height="250" />
 
-[Start with this sketch](https://editor.p5js.org/kwichmann/sketches/0fBDR4iE) - Do note, that the functionality is from the [p5.sound library](https://p5js.org/reference/#/libraries/p5.sound)
+[Start by cloning this sketch](https://editor.p5js.org/kwichmann/sketches/0fBDR4iE) - Do note, that the functionality is from the [p5.sound library](https://p5js.org/reference/#/libraries/p5.sound)
 
 The song "Circle" by the band [Fail to Die](https://www.facebook.com/fail2die/) (whom, I may add, have a particularly charming guitar player) is already added to the sketch and loaded into a variable.
 
