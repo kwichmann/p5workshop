@@ -51,8 +51,8 @@ This [Color picker](https://www.google.com/search?q=color+picker) might be helpf
 - Draw an ellipse with a height that is twice its width.
 - Draw an ellipse such that it encases the rectangle from the exercise 1.4. Make sure it has no fill.
 
-### 1.6 Transparency (alpha)
-- Try adding an extra parameter (alpha) to some of the 'stroke' and 'fill' commands in your sketch. Alpha should be between 0 and 255.
+### 1.6 Opacity (alpha)
+- Try adding an extra parameter (alpha) to some of the 'stroke' and 'fill' commands in your sketch. Alpha should be between 0 and 255. 0 is fully transparent, 255 fully opaque (the default).
 
 ### 1.7 *Optional* - Doing your own research
 - Find the triangle command on the cheat sheet. How do you think it works?
@@ -141,7 +141,12 @@ Use what you've learned to compose a work of your own. Use the examples below, e
 - Use conditionals to check if the logo hits a border - In that case make it bounce by reversing the velocity in the relevant direction. You need to check both x and y directions.
 - Finally, change to tint of the image randomly when the image bounces.
 
-### 4.3 Make your own
+### 4.3 The webcam
+- Consult the cheat sheet to start webcam capture. Your browser will probably ask you for permission to access the cam.
+- Hide the web cam.
+- You can now use the webcam variable the same way you would an image. Try repeating some of the steps in exercise 4.1 for displaying it.
+
+### 4.4 Make your own
 - Find an image online and upload it to your sketch. Transparent png files work best.
 - Display the image on the canvas.
 - Make the way the image display mode interactive, whether through mouse or keyboard input.
